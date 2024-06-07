@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+### Population Explorer
+This Todo List App is a simple web application built with React and Material-UI, allowing users to manage their tasks effectively. It provides features such as adding, editing, deleting, and marking tasks as completed. The app utilizes local storage for persistent data storage, ensuring user data is retained even after page refresh.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Features
+- Add tasks: Easily add new tasks with a simple input field.
+- Edit tasks: Edit existing tasks directly from the list.
+- Delete tasks: Remove unwanted tasks with a single click.
+- Mark tasks as completed: Toggle task completion status with checkboxes.
+- Responsive Design: Responsive layout ensures seamless user experience across devices.
+- Local Storage: Utilizes local storage for data persistence, preserving tasks even after page refresh.
 
-In the project directory, you can run:
 
-### `npm start`
+# Getting Started 
+## Prerequisites
+- Node.js
+- npm (Node Package Manager)
+- Git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
+1.) Clone the repository:
 
-### `npm test`
+      git clone https://github.com/ayu-sharma/to-do-list.git
+      cd to-do-list
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2.) Install dependencies:
 
-### `npm run build`
+      npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the Application
+      npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Usage
+- Add Task: Enter a task in the input field and press Enter or click the "Add" button.
+- Edit Task: Double-click on a task to edit its text.
+- Delete Task: Click on the delete icon next to a task to remove it from the list.
+- Mark Task as Completed: Click on the checkbox next to a task to mark it as completed.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## API Reference
+### Local Storage Usage:
+- The todo list app utilizes local storage to persist task data across browser sessions. Tasks are saved and retrieved from the browser's local storage to maintain state even after refreshing the page or closing the browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
+- Contributions are welcome! Please fork the repository and submit a pull request.
 
-## Learn More
+## License
+- This project is licensed under the MIT License. See the LICENSE file for details.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgments
+- Special thanks to the creators of React and Material-UI for their amazing tools and resources.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
