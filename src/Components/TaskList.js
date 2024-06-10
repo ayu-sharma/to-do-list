@@ -16,10 +16,10 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-padding-top: 20px;
+padding: 20px 10px 0px 10px;
 `
 const StyledList = styled("List")`
-  width: 100%;
+  width:100%;
   max-width: 600px;
   backgroundColor: theme.palette.background.paper,
   margin-top: 2px;
@@ -27,15 +27,21 @@ const StyledList = styled("List")`
   overflow-y: auto; 
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
   border-radius: 8px; 
+  // padding: 0 16px;
+  margin: 0 16px;
 
   &::-webkit-scrollbar {
     width: 0px;
     background: transparent; 
 
 
+
+
   @media (max-width: 360px) {
-    max-width: 360px;
-    padding: 0 10px; 
+    width: 90%; /* Adjust width for extra small screens */
+    padding: 0 10px;
+    max-width: 300px 
+    margin: 0 5px;
   }
 `;
 

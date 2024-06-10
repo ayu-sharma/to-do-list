@@ -5,8 +5,6 @@ import { Input, inputClasses } from '@mui/base/Input';
 import { styled } from '@mui/system';
 import Button from '@mui/material/Button';
 
-
-
 const Container = styled('div')`
   display: flex;
   flex-direction: column;
@@ -18,7 +16,8 @@ const Container = styled('div')`
 const StyledInput = styled(Input)(
   ({ theme }) => `
     .${inputClasses.input} {
-      width: 320px;
+      width: 280px;
+      max-width: 100%;
       font-family: 'IBM Plex Sans', sans-serif;
       font-size: 0.875rem;
       font-weight: 400;
@@ -29,11 +28,9 @@ const StyledInput = styled(Input)(
       background: ${theme.palette.mode === 'dark' ? grey[900] : '#fff'};
       border: 1px solid ${theme.palette.mode === 'dark' ? grey[700] : grey[200]};
       box-shadow: 0px 2px 2px ${theme.palette.mode === 'dark' ? grey[900] : grey[50]};
-
       &:hover {
         border-color: ${blue[400]};
       }
-
       &:focus {
         outline: 0;
         border-color: ${blue[400]};
@@ -92,14 +89,14 @@ const TaskForm = ({ onAddTask, currentTask }) => {
 
   return (
     <Container>
-    <FormControl component="form" style={{ display: 'flex', justifyContent: 'center', flexDirection: "row" }} onSubmit={handleSubmit}>
-      <StyledInput
-        placeholder="Enter your Task..."
-        onChange={handleChange}
-        value={task}
-      />
-      <StyledButton variant="outlined" type="submit">{currentTask ? 'Update' : 'Submit'}</StyledButton>
-    </FormControl>
+      <FormControl component="form" style={{ width: '100%', maxWidth: '600px', display: 'flex', justifyContent: 'center', flexDirection: "row", padding: '0 10px' }} onSubmit={handleSubmit}>
+        <StyledInput
+          placeholder="Enter your Task..."
+          onChange={handleChange}
+          value={task}
+        />
+        <StyledButton variant="outlined" type="submit">{currentTask ? 'Update' : 'Submit'}</StyledButton>
+      </FormControl>
     </Container>
   );
 };
